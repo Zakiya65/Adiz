@@ -1,23 +1,105 @@
-// Simple JavaScript Example
+/* General Design */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
 
-// Contact form validation
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Page reload hone se rokta hai
+/* Header */
+header {
+  background: #222;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
 
-      let name = form.querySelector("input[type='text']").value;
-      let email = form.querySelector("input[type='email']").value;
-      let message = form.querySelector("textarea").value;
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
 
-      if (name === "" || email === "" || message === "") {
-        alert("⚠️ Please fill all fields before submitting!");
-      } else {
-        alert("✅ Thank you, your message has been sent!");
-        form.reset();
-      }
-    });
-  }
-});
+/* Navigation */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Section */
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Contact Form */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff9800;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
