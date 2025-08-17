@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Meri Garments Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Meri Garments Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name:</label><br>
+      <input type="text" placeholder="Your Name"><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" placeholder="Your Email"><br><br>
+
+      <label>Message:</label><br>
+      <textarea placeholder="Write your message..."></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Meri Garments Shop</p>
+  </footer>
+</body>
+</html>
