@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Meri Garments Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Meri Garments Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      Welcome to <b>Meri Garments Shop</b>!  
+      Hum 2025 se high-quality garments provide kar rahe hain.  
+      Hamari specialty hai: cotton shirts, denim jackets, aur stylish kurtis.  
+      Hamara aim hai ke customers ko best quality aur affordable price mile.  
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Meri Garments Shop</p>
+  </footer>
+</body>
+</html>
