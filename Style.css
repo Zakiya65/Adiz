@@ -1,34 +1,23 @@
-/* Basic Styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f9;
-  color: #333;
-}
+// Simple JavaScript Example
 
-header {
-  background: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
+// Contact form validation
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Page reload hone se rokta hai
 
-main {
-  padding: 2rem;
-}
+      let name = form.querySelector("input[type='text']").value;
+      let email = form.querySelector("input[type='email']").value;
+      let message = form.querySelector("textarea").value;
 
-section {
-  margin-bottom: 2rem;
-}
-
-h2 {
-  color: #4CAF50;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
+      if (name === "" || email === "" || message === "") {
+        alert("⚠️ Please fill all fields before submitting!");
+      } else {
+        alert("✅ Thank you, your message has been sent!");
+        form.reset();
+      }
+    });
+  }
+});
